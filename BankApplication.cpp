@@ -21,11 +21,9 @@ BankApplication::BankApplication() {}
 BankApplication::~BankApplication() {
     // deallocating memory
     for(const auto& i:accounts){
-        cout<<"Deleting->"<<i->getID()<<'\n';
         delete i;
     }
     for(const auto& i:clients ){
-        cout<<"Deleting->"<<i->getName()<<'\n';
         delete i;
     }
 }
